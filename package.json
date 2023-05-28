@@ -1,0 +1,11 @@
+{
+  "name": "mycv",
+  "version": "1.0.0",
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "animate.css": "^4.1.1",
+    "bootstrap": "^5.2.3",
+    "jquery": "^3.7.0"
+  }
+}

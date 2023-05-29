@@ -55,6 +55,7 @@ html {
 
 #home-link,
 #about-link,
+#project-link,
 #resume-link {
     display: flex;
     align-items: center;

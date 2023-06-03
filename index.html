@@ -32,67 +32,70 @@
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="node_modules/bootstrap/scss/_variables.scss">
     <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <script defer src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script defer src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script defer src="node_modules/typed.js/dist/typed.umd.js"></script>
+    <script defer src="js/jquery.waypoints.min.js"></script>
     <script defer src="js/main.js"></script>
     <title>Document</title>
 </head>
 
 <body>
-    <section id="menu-section">
+    <section id="menu-section" class="">
         <img id="profile-picture" src="img/prifilepicture.jpg" alt="">
         <span id="my-name">Janitha Madubashana</span>
-        <menu id="menu-list">
-
-            <li>
-                <a href="#main-picture" id="home-link">
-                    <span class="material-symbols-outlined">
-                        home
-                    </span>
-                    Home
-                </a>
-            </li>
-            <li>
-                <a href="#about" id="about-link">
-                    <span class="material-symbols-outlined">
-                        person
-                    </span>
-                    About
-                </a>
-            </li>
-            <li>
-                <a href="projects" id="project-link">
-                    <span class="material-symbols-outlined">
-                        density_medium
-                    </span>
-                    Projects
-                </a>
-            </li>
-            <li>
-                <a id="resume-link">
-                    <span class="material-symbols-outlined">
-                        description
-                    </span>
-                    Resume
-                </a>
-            </li>
-        </menu>
+        <nav id="nav-menu" class="nav-menu navbar">
+            <ul>
+                <li><a href="#main-picture" id="home-link" class="nav-link scrollto ">
+                        <span class="material-symbols-outlined">
+                            home
+                        </span>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#about" id="about-link" class="nav-link scrollto ">
+                        <span class="material-symbols-outlined">
+                            person
+                        </span>
+                        About
+                    </a>
+                </li>
+                <li>
+                    <a href="#skills" id="project-link" class="nav-link scrollto ">
+                        <span class="material-symbols-outlined">
+                            density_medium
+                        </span>
+                        Skills
+                    </a>
+                </li>
+                <li>
+                    <a id="resume-link" class="nav-link scrollto ">
+                        <span class="material-symbols-outlined">
+                            description
+                        </span>
+                        Resume
+                    </a>
+                </li>
+            </ul>
+        </nav>
     </section>
-    <main>
-        <section id="main-picture" class="container-md">
+    <main class="">
+        <section id="start-page" >
+            <div>
+                <h1>I am Janitha Madubashana</h1>
+                <p>I'm <span class="typed" data-typed-items="Full Stack Developer, Designer,Engineer"></span></p>
+            </div>
             <img src="img/6.jpeg" alt="">
 
-
-            <p class="animate__animated  animate__bounceInDown ">Hi, I am a &nbsp;&nbsp;&nbsp;&nbsp;Developer</p>
 
 
         </section>
         <div>
             <section id="about">
-                <header>About</header>
+                <header><span class=" ">Abo</span>ut</header>
                 <p>
                     I am Janitha Madubashana , a Web/Desktop application developer with
                     skills like team work, hardworking and quick learning, who likes to be
@@ -100,146 +103,293 @@
                     company and to buildup his own career. Following are some of my personal
                     details.
                 </p>
-                <table>
-                    <tbody>
-                        <tr id="row-1">
-                            <td><span class="material-symbols-outlined  arrowhead">
-                                    arrow_forward_ios
-                                </span> Birthday</td>
-                            <td>:10 August 1996</td>
-                            <td><span class="material-symbols-outlined  arrowhead">
-                                    arrow_forward_ios
-                                </span>Age</td>
-                            <td>:27</td>
-                        </tr>
-                        <tr id="row-2">
-                            <td><span class="material-symbols-outlined  arrowhead">
-                                    arrow_forward_ios
-                                </span> Degree</td>
-                            <td>:BSc(Hons) in Engineering</td>
-                            <td><span class="material-symbols-outlined  arrowhead">
-                                    arrow_forward_ios
-                                </span>University</td>
-                            <td>:University of Moratuwa</td>
-                        </tr>
-                        <tr id="row-3">
-                            <td><span class="material-symbols-outlined  arrowhead">
-                                    arrow_forward_ios
-                                </span> Phone</td>
-                            <td>:071-6797753</td>
-                            <td><span class="material-symbols-outlined  arrowhead">
-                                    arrow_forward_ios
-                                </span>Email</td>
-                            <td>:madubashanajanitha@gmail.com</td>
-                        </tr>
-                        <tr id="row-4">
-                            <td><span class="material-symbols-outlined  arrowhead">
-                                    arrow_forward_ios
-                                </span> Address</td>
-                            <td>:60/20 A, Veterinary Surgeon Road, Aluthgama road, Elpitiya</td>
-                            <td><span class="material-symbols-outlined  arrowhead">
-                                    arrow_forward_ios
-                                </span>Freelance</td>
-                            <td>:Available</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div id="personal-details" class="d-flex flex-shrink-0">
+                    <img src="img/prifilepicture.jpg" alt="">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <ul>
+                                <li><span class="material-symbols-outlined  arrowhead">
+                                        arrow_forward_ios
+                                    </span> <strong>Birthday:</strong> <span>10 August 1996</span></li>
+                                <li><span class="material-symbols-outlined  arrowhead">
+                                        arrow_forward_ios
+                                    </span> <strong>Age:</strong> <span>27</span></li>
+                                <li><span class="material-symbols-outlined  arrowhead">
+                                        arrow_forward_ios
+                                    </span> <strong>Phone:</strong> <span>071-6797753</span></li>
+                                <li><span class="material-symbols-outlined  arrowhead">
+                                        arrow_forward_ios
+                                    </span> <strong>Address:</strong> <span>60/20 A, Veterinary Surgeon Road, Aluthgama
+                                        road, Elpitiya</span></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6">
+                            <ul>
+                                <li><span class="material-symbols-outlined  arrowhead">
+                                        arrow_forward_ios
+                                    </span> <strong>Degree:</strong> <span>BSc(Hons) in Engineering</span></li>
+                                <li><span class="material-symbols-outlined  arrowhead">
+                                        arrow_forward_ios
+                                    </span> <strong>University:</strong> <span>University of Moratuwa</span></li>
+                                <li><span class="material-symbols-outlined  arrowhead">
+                                        arrow_forward_ios
+                                    </span> <strong>Email:</strong> <span>madubashanajanitha@gmail.com</span></li>
+                                <li><span class="material-symbols-outlined  arrowhead">
+                                        arrow_forward_ios
+                                    </span> <strong>Freelance:</strong> <span>Available</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
 
             </section>
-            <section id="skills">
+            <section class="skills">
                 <header>Technical Skills</header>
                 <p>Following are some of the skills I have developed sofar during my
                     training period in IJSE Institute as a Associate Software Engineer.</p>
-                <table>
-                    <tbody>
-                        <tr class="table-row-head">
-                            <td>Desktop App development</td>
-                            <td>DBMS</td>
-                        </tr>
-                        <tr class="table-row-data">
-                            <td>Java SE 11</td>
-                            <td>MySQL</td>
-                        </tr>
-                        <tr class="table-row-data">
-                            <td colspan="2">Java FX</td>
-                        </tr>
-                        <tr class="table-row-data">
-                            <td colspan="2">Jasper Reports</td>
-                        </tr>
-                    </tbody>
-                    <tbody>
-                        <tr class="table-row-head">
-                            <td class="table-data">Front end development</td>
-                            <td>Back end development</td>
-                        </tr>
-                        <tr class="table-row-data">
-                            <td>HTML</td>
-                            <td>Spring</td>
-                        </tr>
-                        <tr class="table-row-data">
-                            <td>CSS</td>
-                            <td>JSP</td>
-                        </tr>
-                        <tr class="table-row-data">
-                            <td>EcmaScript(JavaScript)</td>
-                            <td>Java EE</td>
-                        </tr>
-                        <tr class="table-row-data">
-                            <td colspan="2">TypeScript</td>
-                        </tr>
-                        <tr class="table-row-data">
-                            <td colspan="2">TailWind CSS</td>
-                        </tr>
-                        <tr class="table-row-data">
-                            <td colspan="2">jQuery</td>
-                        </tr>
-                        <tr class="table-row-data">
-                            <td colspan="2">jQuery UI</td>
-                        </tr>
-                        <tr class="table-row-data">
-                            <td colspan="2">BootsTrap</td>
-                        </tr>
-                    </tbody>
-                    <tbody>
-                        <tr class="table-row-head">
-                            <td>Data Structuring</td>
-                            <td>Others</td>
-                        </tr>
-                        <tr class="table-row-data">
-                            <td>JSON</td>
-                            <td>Maven</td>
-                        </tr>
-                        <tr class="table-row-data">
-                            <td>GSON</td>
-                            <td>Node JS</td>
-                        </tr>
+                <div class="border border-primary-subtle rounded p-2 fixed">
 
-                    </tbody>
-                    <tbody class="">
-                        <tr class="table-row-head  ">
-                            <td colspan="2">Application Servers</td>
-                        </tr>
-                        <tr class="table-row-data">
-                            <td colspan="2">Tomcat</td>
-                        </tr>
-                        <tr class="table-row-data">
-                            <td colspan="2">Jetty </td>
-                        </tr>
-                        <tr class="table-row-data">
-                            <td colspan="2">GlassFish</td>
-                        </tr>
-                        <tr class="table-row-data --bs-success-bg-subtle">
-                            <td colspan="2">Maven</td>
-                        </tr>
+                    <ul class="nav nav-underline pb-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#/front-end">Front-end</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#/back-end">Back-end</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#/desktop-app">Desktop Apps</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#/database">Databases</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#/others">Others</a>
+                        </li>
+                    </ul>
+                    <div id="front-end" class="skill-type">
+                        <div class="row skills-content">
 
-                    </tbody>
-                </table>
+                            <div class="col-lg-6" data-aos="fade-up">
+
+                                <div class="progress">
+                                    <span class="skill">HTML <i class="val">100%</i></span>
+                                    <div class="progress-bar-wrap">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="100"
+                                            aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+
+                                <div class="progress">
+                                    <span class="skill">CSS <i class="val">90%</i></span>
+                                    <div class="progress-bar-wrap">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="90"
+                                            aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+
+                                <div class="progress">
+                                    <span class="skill">JavaScript <i class="val">75%</i></span>
+                                    <div class="progress-bar-wrap">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="75"
+                                            aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                                <div class="progress">
+                                    <span class="skill">SCSS<i class="val">75%</i></span>
+                                    <div class="progress-bar-wrap">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="75"
+                                            aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+
+                                <div class="progress">
+                                    <span class="skill">jquery <i class="val">80%</i></span>
+                                    <div class="progress-bar-wrap">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="80"
+                                            aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+
+                                <div class="progress">
+                                    <span class="skill">jquery UI <i class="val">90%</i></span>
+                                    <div class="progress-bar-wrap">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="90"
+                                            aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+
+                                <div class="progress">
+                                    <span class="skill">Bootstrap <i class="val">55%</i></span>
+                                    <div class="progress-bar-wrap">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="55"
+                                            aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div id="back-end" class="skill-type d-none">
+                        <div class="row skills-content">
+
+                            <div class="col-lg-6" data-aos="fade-up">
+
+                                <div class="progress">
+                                    <span class="skill">HTML <i class="val">100%</i></span>
+                                    <div class="progress-bar-wrap">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="100"
+                                            aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+
+                                <div class="progress">
+                                    <span class="skill">CSS <i class="val">90%</i></span>
+                                    <div class="progress-bar-wrap">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="90"
+                                            aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+
+                                <div class="progress">
+                                    <span class="skill">JavaScript <i class="val">75%</i></span>
+                                    <div class="progress-bar-wrap">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="75"
+                                            aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+
+                                <div class="progress">
+                                    <span class="skill">PHP <i class="val">80%</i></span>
+                                    <div class="progress-bar-wrap">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="80"
+                                            aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+
+                                <div class="progress">
+                                    <span class="skill">WordPress/CMS <i class="val">90%</i></span>
+                                    <div class="progress-bar-wrap">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="90"
+                                            aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+
+                                <div class="progress">
+                                    <span class="skill">Photoshop <i class="val">55%</i></span>
+                                    <div class="progress-bar-wrap">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="55"
+                                            aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div id="desktop-app" class="skill-type d-none">
+                        <div class="row skills-content">
+
+                            <div class="col-lg-6" data-aos="fade-up">
+
+                                <div class="progress">
+                                    <span class="skill">Java SE <i class="val">100%</i></span>
+                                    <div class="progress-bar-wrap">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="100"
+                                            aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+
+                                <div class="progress">
+                                    <span class="skill">Java FX <i class="val">90%</i></span>
+                                    <div class="progress-bar-wrap">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="90"
+                                            aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+
+                                <div class="progress">
+                                    <span class="skill">Jasper Reports <i class="val">75%</i></span>
+                                    <div class="progress-bar-wrap">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="75"
+                                            aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                    <div id="database" class="skill-type d-none ">
+                        <div class="row skills-content">
+
+                            <div class="col-lg-6" data-aos="fade-up">
+
+                                <div class="progress">
+                                    <span class="skill">MySQL<i class="val">100%</i></span>
+                                    <div class="progress-bar-wrap">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="70"
+                                            aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                                <div class="progress">
+                                    <span class="skill">JSON<i class="val">100%</i></span>
+                                    <div class="progress-bar-wrap">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="70"
+                                            aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                                <div class="progress">
+                                    <span class="skill">GSON<i class="val">100%</i></span>
+                                    <div class="progress-bar-wrap">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="50"
+                                            aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="others" class="skill-type d-none ">
+                        <div class="row skills-content">
+
+                            <div class="col-lg-6" data-aos="fade-up">
+
+                                <div class="progress">
+                                    <span class="skill">Maven<i class="val">100%</i></span>
+                                    <div class="progress-bar-wrap">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="70"
+                                            aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                                <div class="progress">
+                                    <span class="skill">Node JS<i class="val">100%</i></span>
+                                    <div class="progress-bar-wrap">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                                            aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
             </section>
             <section id="projects">
                 <header>Projects</header>
                 <p>During my 6 month training period in IJSE Institute I have done several project related to
-                   Web Application development (both front end and bsck end) and several desktop applications
-                   using above mentioned technologies.
+                    Web Application development (both front end and bsck end) and several desktop applications
+                    using above mentioned technologies.
                 </p>
             </section>
 

@@ -110,7 +110,7 @@ main {
     position: absolute;
     top: 0;
     right: 0;
-    margin-left: 300px ;
+    margin-left: 300px;
     padding-left: 40px;
     padding-right: 40px;
 }
@@ -129,14 +129,17 @@ main {
     height: 500px;
     width: auto;
 }
-#start-page div{
+
+#start-page div {
     height: fit-content;
 }
-#start-page h1{
+
+#start-page h1 {
     font-size: 64px;
     font-family: 'Raleway';
     color: #173b6c;
 }
+
 #start-page p {
     font-size: 26px;
     font-weight: 400;
@@ -144,28 +147,32 @@ main {
     color: #173b6c;
     font-family: 'Poppins';
 }
-#start-page p>span{
+
+#start-page p>span {
     border-bottom: 3px solid #149ddd;
 }
+
 main>div {
     background-color: white;
     font-family: 'Open Sans', sans-serif;
 }
 
 /*about section*/
-#about{
+#about {
     height: 100vh;
 }
+
 #about>header {
     margin-top: 30px;
     font-size: 32px;
     font-weight: bold;
     color: #173b6c;
     font-family: 'Raleway';
-    
+
 
 }
-#about>header>span{
+
+#about>header>span {
     padding-bottom: 15px;
     border-bottom: 3px solid #149ddd;
 }
@@ -176,15 +183,16 @@ main>div {
     line-height: 30px;
 }
 
-#personal-details li{
+#personal-details li {
     height: 60px;
 
 }
 
-#personal-details img{
+#personal-details img {
     height: 330px;
     width: 330px;
 }
+
 .arrowhead {
     font-size: 16px;
     color: #149ddd;
@@ -192,13 +200,13 @@ main>div {
 }
 
 
-/*skills section*/
-.skills {
+/*#skills section*/
+#skills {
     margin-top: 40px;
     height: 100vh;
 }
 
-.skills>header {
+#skills>header {
     margin-top: 30px;
     font-size: 32px;
     font-weight: bold;
@@ -207,19 +215,20 @@ main>div {
     text-underline-offset: 15px;
 }
 
-.skills>p {
+#skills>p {
     text-align: justify;
     padding-top: 40px;
     line-height: 30px;
 }
-.skills .progress {
+
+#skills .progress {
     height: 60px;
     display: block;
     background: none;
     border-radius: 0;
-  }
-  
-  .skills .progress .skill {
+}
+
+#skills .progress .skill {
     padding: 0;
     margin: 0 0 6px 0;
     text-transform: uppercase;
@@ -227,24 +236,24 @@ main>div {
     font-weight: 600;
     font-family: "Poppins", sans-serif;
     color: #050d18;
-  }
-  
-  .skills .progress .skill .val {
+}
+
+#skills .progress .skill .val {
     float: right;
     font-style: normal;
-  }
-  
-  .skills .progress-bar-wrap {
+}
+
+#skills .progress-bar-wrap {
     background: #dce8f8;
     height: 10px;
-  }
-  
-  .skills .progress-bar {
+}
+
+#skills .progress-bar {
     width: 1px;
     height: 10px;
     transition: 0.9s;
     background-color: #149ddd;
-  }
+}
 
 
 
@@ -255,6 +264,10 @@ main>div {
 
 
 /*Projects section*/
+#projects{
+    min-height: 100vh;
+}
+
 #projects>header {
     margin-top: 30px;
     font-size: 32px;
@@ -269,39 +282,107 @@ main>div {
     padding-top: 40px;
 }
 
+#projects .icon-box {
+    margin-bottom: 20px;
+}
+
+#projects .icon {
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 54px;
+    height: 54px;
+    background: #149ddd;
+    border-radius: 50%;
+    transition: 0.5s;
+    border: 1px solid #149ddd;
+}
+
+#projects .icon span {
+    color: #fff;
+    font-size: 24px;
+    line-height: 0;
+}
+
+#projects .icon-box:hover .icon {
+    background: #fff;
+}
+
+#projects .icon-box:hover .icon i {
+    color: #149ddd;
+}
+
+#projects .title {
+    margin-left: 80px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+#projects .title a {
+    color: #343a40;
+}
+
+#projects .title a:hover {
+    color: #149ddd;
+}
+
+#projects .description {
+    margin-left: 80px;
+    line-height: 24px;
+    font-size: 14px;
+}
+
+#projects .link {
+    margin-left: 80px;
+    line-height: 24px;
+    font-size: 14px;
+}
+
+/*Contact*/
+
+
+
+
+
+
 @media all and (max-width: 1199px) {
     #menu-section {
-        margin-left: -300px;     
+        margin-left: -300px;
     }
-    #start-page{
-        
-    }
+
+    #start-page {}
+
     #start-page img {
-       display: none;
+        display: none;
     }
+
     #start-page div {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-     }
-    
+    }
+
     main {
         margin-left: 0;
         margin-right: 0;
     }
 }
+
 @media all and (max-width: 992px) {
-    #about{
+    #about {
         height: auto;
     }
-    .skills{
+
+    #skills {
         height: auto;
     }
-}
-@media all and (max-width: 768px) {
-    #start-page div h1{
-        font-size:40 px;
-     }
 }
 
+@media all and (max-width: 768px) {
+    #start-page div h1 {
+        font-size: 40 px;
+    }
+}

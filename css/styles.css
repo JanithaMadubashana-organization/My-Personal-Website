@@ -210,7 +210,7 @@ main>div {
     margin-top: 30px;
     font-size: 32px;
     font-weight: bold;
-    color: #173b6c;
+    /* color: #173b6c; */
     text-decoration: underline;
     text-underline-offset: 15px;
 }

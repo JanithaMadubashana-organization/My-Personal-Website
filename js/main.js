@@ -36,11 +36,14 @@ $('#x').on('click',()=>{
 });
 
 
-const frontEndSkillsLink= $(".skills li:nth-child(1)");
-const backEndSkillsLink= $(".skills li:nth-child(2)");
-const deskTopAppSkillsLink= $(".skills li:nth-child(3)");
-const dataBaseSkillsLink= $(".skills li:nth-child(4)");
-const otherSkillsLink= $(".skills li:nth-child(5)");
+const frontEndSkillsLink= $("#skills li:nth-child(1)");
+
+const backEndSkillsLink= $("#skills li:nth-child(2)");
+
+const deskTopAppSkillsLink= $("#skills li:nth-child(3)");
+
+const dataBaseSkillsLink= $("#skills li:nth-child(4)");
+const otherSkillsLink= $("#skills li:nth-child(5)");
 
 const frontEndSkills=$("#front-end");
 const backEndSkills=$("#back-end");
